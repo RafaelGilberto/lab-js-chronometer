@@ -46,10 +46,12 @@ class Chronometer {
 
   split() {
     // ... your code goes here
-    let minutes = computeTwoDigitNumber(getMinutes());
-    let seconds = computeTwoDigitNumber(getSeconds());
-    let splitChoro = minutes + ":" + seconds;
-    return splitChoro;
+
+    return (
+      this.computeTwoDigitNumber(this.getMinutes()) +
+      ":" +
+      this.computeTwoDigitNumber(this.getSeconds())
+    );
   }
 }
 let viga = new Chronometer();
