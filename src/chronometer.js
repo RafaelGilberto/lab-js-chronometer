@@ -54,5 +54,3 @@ class Chronometer {
     );
   }
 }
-let viga = new Chronometer();
-console.log(viga.split());
